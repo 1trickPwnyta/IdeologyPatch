@@ -13,7 +13,6 @@ namespace IdeologyPatch
             if (__instance.thought == null)
             {
                 __result = new List<string>();
-                Debug.Log("fixed it???");
                 return false;
             }
             return true;

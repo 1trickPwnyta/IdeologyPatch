@@ -14,7 +14,6 @@ namespace IdeologyPatch
             if (__instance.thought == null)
             {
                 __result = new List<TraitRequirement>();
-                Debug.Log("fixed it for realz???");
                 return false;
             }
             return true;
