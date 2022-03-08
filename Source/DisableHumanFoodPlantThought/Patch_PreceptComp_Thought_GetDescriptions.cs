@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace IdeologyPatch
 {
     [HarmonyPatch(typeof(PreceptComp_Thought))]
-    [HarmonyPatch("GetDescriptions")]
+    [HarmonyPatch(nameof(PreceptComp_Thought.GetDescriptions))]
     public static class Patch_PreceptComp_Thought_GetDescriptions
     {
         public static bool Prefix(PreceptComp_Thought __instance, ref IEnumerable<string> __result)

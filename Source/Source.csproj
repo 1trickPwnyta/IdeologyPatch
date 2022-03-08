@@ -50,9 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Debug.cs" />
+    <Compile Include="DisableHumanFoodPlantThought\Patch_DirectXmlCrossRefLoader_ResolveAllWantedCrossReferences.cs" />
     <Compile Include="IdeologyPatchMod.cs" />
-    <Compile Include="Patch_PreceptComp_SelfTookMemoryThought_get_TraitsAffecting.cs" />
-    <Compile Include="Patch_PreceptComp_Thought_GetDescriptions.cs" />
+    <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_SelfTookMemoryThought_get_TraitsAffecting.cs" />
+    <Compile Include="DryadWanderRadius\Patch_JobGiver_WanderNearConnectedTree_ctor.cs" />
+    <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_Thought_GetDescriptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

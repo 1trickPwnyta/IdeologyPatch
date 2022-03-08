@@ -3,7 +3,4 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>/Defs/ThoughtDef[defName="Ranching_SowedPlant"]</xpath>
 	</Operation>
-	<Operation Class="PatchOperationRemove">
-		<xpath>/Defs/PreceptDef[defName="Ranching_Central"]/comps/li[Class="PreceptComp_SelfTookMemoryThought"]</xpath>
-	</Operation>
 </Patch>
