@@ -55,6 +55,7 @@
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_SelfTookMemoryThought_get_TraitsAffecting.cs" />
     <Compile Include="DryadWanderRadius\Patch_JobGiver_WanderNearConnectedTree_ctor.cs" />
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_Thought_GetDescriptions.cs" />
+    <Compile Include="PrisonerConversionLetterJumpToPrisoner\Patch_InteractionWorker_ConvertIdeoAttempt_Interacted.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

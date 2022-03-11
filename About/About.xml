@@ -7,7 +7,12 @@
 		<li>1.3</li>
 	</supportedVersions>
 	<description>
-This section intentionally left blank for now.
+This mod makes a handful of small tweaks to the Ideology DLC that are intended to make the game a bit more enjoyable without changing the gameplay too much.
+
+Full list of tweaks:
+- Ranchers no longer get upset about planting "human food crops". They already get a mood penalty for eating vegetables; they don't need another one just for planting them. Besides, who says you're planting them in order to eat them? Maybe you just want to make chemfuel. Or you want to have food onhand that you can use to train your animals.
+- Dryads no longer wander further from their tree than the building radius warning (12 tiles -> 7 tiles). This makes it more intuitive to build a wall around the tree just outside the warning radius to keep the dryads safe from raiders.
+- When you receive a letter for finishing converting a prisoner, the Jump to location link selects the prisoner that was converted rather than the person who did the converting. This makes it easier to select a new prisoner interaction such as Recruit.
 	</description>
 	<url>https://github.com/1trickPwnyta/IdeologyPatch</url>
 	<modDependencies>
