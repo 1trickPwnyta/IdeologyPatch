@@ -6,18 +6,15 @@ using Verse;
 
 namespace IdeologyPatch.PrisonerConversionLetterJumpToPrisoner
 {
+    [HarmonyPatch(typeof(InteractionWorker_ConvertIdeoAttempt))]
+    [HarmonyPatch(nameof(InteractionWorker_ConvertIdeoAttempt.Interacted))]
     public static class Patch_InteractionWorker_ConvertIdeoAttempt_Interacted
     {
-        [HarmonyPatch(typeof(InteractionWorker_ConvertIdeoAttempt))]
-        [HarmonyPatch(nameof(InteractionWorker_ConvertIdeoAttempt.Interacted))]
-        public static class Patch_PreceptComp_SelfTookMemoryThought_get_TraitsAffecting
+        public static void Postfix(Pawn initiator, Pawn recipient, LookTargets lookTargets)
         {
-            public static void Postfix(Pawn initiator, Pawn recipient, LookTargets lookTargets)
+            if (lookTargets != null)
             {
-                if (lookTargets != null)
-                {
-                    lookTargets.targets = (new GlobalTargetInfo[] { recipient, initiator }).ToList();
-                }
+                lookTargets.targets = (new GlobalTargetInfo[] { recipient, initiator }).ToList();
             }
         }
     }

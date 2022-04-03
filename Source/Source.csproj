@@ -57,6 +57,7 @@
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_Thought_GetDescriptions.cs" />
     <Compile Include="PrisonerConversionLetterJumpToPrisoner\Patch_InteractionWorker_ConvertIdeoAttempt_Interacted.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResearchMissingMemes\Patch_MainTabWindow_Research_ComputeUnlockedDefsThatHaveMissingMemes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
