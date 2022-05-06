@@ -14,6 +14,7 @@ Full list of tweaks:
 - Dryads no longer wander further from their tree than the building radius warning (12 tiles -> 7 tiles). This makes it more intuitive to build a wall around the tree just outside the warning radius to keep the dryads safe from raiders.
 - When you receive a letter for finishing converting a prisoner, the Jump to location link selects the prisoner that was converted rather than the person who did the converting. This makes it easier to select a new prisoner interaction such as Recruit.
 - Starting research that unlocks things that "require memes that none of your people believe" no longer triggers a pop-up unless ALL of the unlocked things require such memes. In other words, you won't be bothered if there's anything that you CAN build.
+- When beginning a role change ritual, the role selected by default will be an unfilled role unless all roles are filled so you don't accidentally assign the moral guide role twice and make someone unhappy, for example.
 	</description>
 	<url>https://github.com/1trickPwnyta/IdeologyPatch</url>
 	<modDependencies>

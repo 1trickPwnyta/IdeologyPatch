@@ -58,6 +58,7 @@
     <Compile Include="PrisonerConversionLetterJumpToPrisoner\Patch_InteractionWorker_ConvertIdeoAttempt_Interacted.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResearchMissingMemes\Patch_MainTabWindow_Research_ComputeUnlockedDefsThatHaveMissingMemes.cs" />
+    <Compile Include="RoleChangeUseUntaken\Patch_Dialog_BeginRitual_UpdateRoleChangeTargetRole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
