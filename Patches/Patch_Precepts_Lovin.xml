@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/PreceptDef[defName="Lovin_SpouseOnly_Strict"]/defaultSelectionWeight</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/PreceptDef[defName="Lovin_SpouseOnly_Moderate"]/defaultSelectionWeight</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/PreceptDef[defName="Lovin_SpouseOnly_Mild"]/defaultSelectionWeight</xpath>
+	</Operation>
+</Patch>
