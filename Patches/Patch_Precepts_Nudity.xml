@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/PreceptDef[defName="Nudity_Female_UncoveredGroinDisapproved"]</xpath>
+		<value>
+			<defaultSelectionWeight>1</defaultSelectionWeight>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/PreceptDef[defName="Nudity_Female_UncoveredGroinOrChestDisapproved"]/defaultSelectionWeight</xpath>
+	</Operation>
+</Patch>

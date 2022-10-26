@@ -4,7 +4,7 @@
 	<author>1trickPwnyta</author>
 	<packageId>ideologypatch.1trickPwnyta</packageId>
 	<supportedVersions>
-		<li>1.3</li>
+		<li>1.4</li>
 	</supportedVersions>
 	<description>
 This mod makes a handful of small tweaks to the Ideology DLC that are intended to make the game a bit more enjoyable without changing the gameplay too much.
@@ -15,6 +15,7 @@ Full list of tweaks:
 - When you receive a letter for finishing converting a prisoner, the Jump to location link selects the prisoner that was converted rather than the person who did the converting. This makes it easier to select a new prisoner interaction such as Recruit.
 - Starting research that unlocks things that "require memes that none of your people believe" no longer triggers a pop-up unless ALL of the unlocked things require such memes. In other words, you won't be bothered if there's anything that you CAN build.
 - When beginning a role change ritual, the role selected by default will be an unfilled role unless all roles are filled so you don't accidentally assign the moral guide role twice and make someone unhappy, for example.
+- Sets the default female clothing requirement for ideologies to groin covering only, as it is for men.
 	</description>
 	<url>https://github.com/1trickPwnyta/IdeologyPatch</url>
 	<modDependencies>
