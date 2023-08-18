@@ -16,9 +16,12 @@ Full list of tweaks:
 - Starting research that unlocks things that "require memes that none of your people believe" no longer triggers a pop-up unless ALL of the unlocked things require such memes. In other words, you won't be bothered if there's anything that you CAN build.
 - When beginning a role change ritual, the role selected by default will be an unfilled role unless all roles are filled so you don't accidentally assign the moral guide role twice and make someone unhappy, for example.
 - Sets the default female clothing requirement for ideologies to groin covering only, as it is for men.
-- Sets the default physical love precept to free so that people can have premarital sex like they did before Ideology
+- Sets the default physical love precept to free so that people can have premarital sex like they did before Ideology.
+- Disables the darkness mood debuff for the Tunneler meme (specifically the Fungus: Preferred precept, because if you like fungus you shouldn't hate planting it).
 
 === Updates ===
+08/17/2023: Disabled the darkness thought for fungus: preferred
+10/26/2022: Removed debugging messages from the dev log
 10/26/2022: Added the default physical love precept
 	</description>
 	<url>https://github.com/1trickPwnyta/IdeologyPatch</url>
