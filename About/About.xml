@@ -19,8 +19,10 @@ Full list of tweaks:
 - Sets the default physical love precept to free so that people can have premarital sex like they did before Ideology.
 - Disables the darkness mood debuff for the Tunneler meme (specifically the Fungus: Preferred precept, because if you like fungus you shouldn't hate planting it).
 - Adds the Corpses: Don't Care precept to the Bloodfeeding meme (because cannibalism).
+- Changes the nudity precept "Pants at most" to "Pants only", which does the same thing but is worded correctly.
 
 === Updates ===
+08/18/2023: Renamed Pants at most to Pants only
 08/17/2023: Disabled the darkness thought for fungus: preferred, associate corpses: don't care with bloodfeeding meme
 10/26/2022: Removed debugging messages from the dev log
 10/26/2022: Added the default physical love precept

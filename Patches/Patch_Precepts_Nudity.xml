@@ -9,4 +9,16 @@
 	<Operation Class="PatchOperationRemove">
 		<xpath>/Defs/PreceptDef[defName="Nudity_Female_UncoveredGroinOrChestDisapproved"]/defaultSelectionWeight</xpath>
 	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/PreceptDef[defName="Nudity_Male_CoveringAnythingButGroinDisapproved"]/label</xpath>
+		<value>
+			<label>pants only</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/PreceptDef[defName="Nudity_Female_CoveringAnythingButGroinDisapproved"]/label</xpath>
+		<value>
+			<label>pants only</label>
+		</value>
+	</Operation>
 </Patch>
