@@ -20,8 +20,10 @@ Full list of tweaks:
 - Disables the darkness mood debuff for the Tunneler meme (specifically the Fungus: Preferred precept, because if you like fungus you shouldn't hate planting it).
 - Adds the Corpses: Don't Care precept to the Bloodfeeding meme (because cannibalism).
 - Changes the nudity precept "Pants at most" to "Pants only", which does the same thing but is worded correctly.
+- Fixes bug where some pawns (genies?) think they have an artificial part when they don't, cancelling the mood penalty from the Flesh Purity meme.
 
 === Updates ===
+08/28/2023: Fixed prosthetics count bug
 08/18/2023: Renamed Pants at most to Pants only
 08/17/2023: Disabled the darkness thought for fungus: preferred, associate corpses: don't care with bloodfeeding meme
 10/26/2022: Removed debugging messages from the dev log
