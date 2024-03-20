@@ -5,6 +5,7 @@
 	<packageId>ideologypatch.1trickPwnyta</packageId>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<description>
 This mod makes a handful of small tweaks to the Ideology DLC that are intended to make the game a bit more enjoyable without changing the gameplay too much.
@@ -23,6 +24,7 @@ Full list of tweaks:
 - Fixes bug where some pawns (genies?) think they have an artificial part when they don't, cancelling the mood penalty from the Flesh Purity meme.
 
 === Updates ===
+03/20/2024: Update to 1.5
 08/28/2023: Fixed prosthetics count bug
 08/18/2023: Renamed Pants at most to Pants only
 08/17/2023: Disabled the darkness thought for fungus: preferred, associate corpses: don't care with bloodfeeding meme
