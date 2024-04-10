@@ -59,6 +59,7 @@
     <Compile Include="ProstheticsCount\Patch_ThoughtWorker_Precept_HasProsthetic_Count.cs" />
     <Compile Include="PrisonerConversionLetterJumpToPrisoner\Patch_InteractionWorker_ConvertIdeoAttempt_Interacted.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecreationalDrugAvoidance\Patch_JoyGiver_TakeDrug.cs" />
     <Compile Include="ResearchMissingMemes\Patch_MainTabWindow_Research_ComputeUnlockedDefsThatHaveMissingMemes.cs" />
     <Compile Include="RoleChangeUseUntaken\Patch_RitualRoleAssignments_UpdateRoleChangeTargetRole.cs" />
   </ItemGroup>
