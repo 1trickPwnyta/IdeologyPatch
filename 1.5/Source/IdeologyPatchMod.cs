@@ -1,4 +1,6 @@
 ﻿using HarmonyLib;
+using RimWorld;
+using System;
 using Verse;
 
 namespace IdeologyPatch
@@ -12,6 +14,7 @@ namespace IdeologyPatch
         {
             var harmony = new Harmony(PACKAGE_ID);
             harmony.PatchAll();
+            harmony.Patch(typeof(CompTreeConnection).GetConstructor(new Type[] { }), null, typeof(PruningTime.Patch_CompTreeConnection_ctor).GetMethod("Postfix"));
 
             Log.Message($"[{PACKAGE_NAME}] Loaded.");
         }
