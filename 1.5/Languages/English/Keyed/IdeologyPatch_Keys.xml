@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<IdeologyPatch_RestartRequired>(requires restart)</IdeologyPatch_RestartRequired>
+	<IdeologyPatch_DisableHumanFoodPlantThought>Disable rancher thought about planting human food</IdeologyPatch_DisableHumanFoodPlantThought>
+	<IdeologyPatch_DryadWanderRadius>Limit dryad wander radius to the building radius of the gauranlen tree</IdeologyPatch_DryadWanderRadius>
+	<IdeologyPatch_PrisonerConversionLetterJumpToPrisoner>Jump to prisoner in conversion letter</IdeologyPatch_PrisonerConversionLetterJumpToPrisoner>
+	<IdeologyPatch_PruningTime>Don't ignore needs while pruning gauranlen tree</IdeologyPatch_PruningTime>
+	<IdeologyPatch_RecreationalDrugAvoidance>Believers in drug avoidance won't randomly use drugs</IdeologyPatch_RecreationalDrugAvoidance>
+	<IdeologyPatch_ResearchMissingMemes>Disable warning when research includes things that require particular memes</IdeologyPatch_ResearchMissingMemes>
+	<IdeologyPatch_RoleChangeUseUntaken>Automatically select unfilled role in role change dialog</IdeologyPatch_RoleChangeUseUntaken>
+	<IdeologyPatch_BloodfeedingCorpsesDontCare>Bloodfeeding meme adds Corpses: Don't care precept</IdeologyPatch_BloodfeedingCorpsesDontCare>
+	<IdeologyPatch_PremaritalSex>Default physical love precept to Free</IdeologyPatch_PremaritalSex>
+	<IdeologyPatch_FemaleNudity>Default female clothing precept to Pants</IdeologyPatch_FemaleNudity>
+	<IdeologyPatch_PantsOnly>Change name of "Pants at most" to "Pants only"</IdeologyPatch_PantsOnly>
+	<IdeologyPatch_FungusPreferredDisablesDarkThought>Disable darkness mood penalty for Fungus: preferred precept</IdeologyPatch_FungusPreferredDisablesDarkThought>
+</LanguageData>

@@ -1,11 +1,22 @@
-﻿namespace IdeologyPatch.PruningTime
+﻿using HarmonyLib;
+using RimWorld;
+
+namespace IdeologyPatch.PruningTime
 {
-    // Patched manually in mod constructor
-    public static class Patch_CompTreeConnection_ctor
+    [HarmonyPatch(typeof(CompTreeConnection))]
+    [HarmonyPatch(nameof(CompTreeConnection.ShouldBePrunedNow))]
+    public static class Patch_CompTreeConnection_ShouldBePrunedNow
     {
-        public static void Postfix(ref float ___TimeBetweenAutoPruning)
+        public static void Prefix(ref float ___TimeBetweenAutoPruning)
         {
-            ___TimeBetweenAutoPruning = 0f;
+            if (IdeologyPatchSettings.PruningTime)
+            {
+                ___TimeBetweenAutoPruning = 0f;
+            }
+            else
+            {
+                ___TimeBetweenAutoPruning = 10000f;
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ namespace IdeologyPatch.ProstheticsCount
     {
         public static void Postfix(Pawn pawn, ref float __result)
         {
-            if (pawn.IsTeetotaler())
+            if (IdeologyPatchSettings.RecreationalDrugAvoidance && pawn.IsTeetotaler())
             {
                 __result = 0f;
             }

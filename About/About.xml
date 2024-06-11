@@ -12,7 +12,7 @@ This mod makes a handful of small tweaks to the Ideology DLC that are intended t
 
 Full list of tweaks:
 - Ranchers no longer get upset about planting "human food crops". They already get a mood penalty for eating vegetables; they don't need another one just for planting them. Besides, who says you're planting them in order to eat them? Maybe you just want to make chemfuel. Or you want to have food onhand that you can use to train your animals.
-- Dryads no longer wander further from their tree than the building radius warning (12 tiles -> 7 tiles). This makes it more intuitive to build a wall around the tree just outside the warning radius to keep the dryads safe from raiders.
+- Dryads no longer wander further from their tree than the building radius warning (12 tiles -> 7.9 tiles). This makes it more intuitive to build a wall around the tree just outside the warning radius to keep the dryads safe from raiders.
 - When you receive a letter for finishing converting a prisoner, the Jump to location link selects the prisoner that was converted rather than the person who did the converting. This makes it easier to select a new prisoner interaction such as Recruit.
 - Starting research that unlocks things that "require memes that none of your people believe" no longer triggers a pop-up unless ALL of the unlocked things require such memes. In other words, you won't be bothered if there's anything that you CAN build.
 - When beginning a role change ritual, the role selected by default will be an unfilled role unless all roles are filled so you don't accidentally assign the moral guide role twice and make someone unhappy, for example.
@@ -25,6 +25,7 @@ Full list of tweaks:
 - Gauranlen tree-connected pawns will no longer ignore their needs for hours at a time while pruning the tree. It's not like the tree is the golden cube.
 
 === Updates ===
+06/11/2024: Add settings to toggle each tweak
 05/24/2024: Remove artificial enhancement calculation change. Genies were not bugged after all.
 04/29/2024: Prevent pawns from pruning the tree non-stop while ignoring their own needs
 04/09/2024: Stopped pawns against recreational drug use from using recreational drugs

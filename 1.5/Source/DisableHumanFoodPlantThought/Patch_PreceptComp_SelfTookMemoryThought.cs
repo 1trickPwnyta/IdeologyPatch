@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using Verse;
 
 namespace IdeologyPatch
 {
@@ -8,9 +7,9 @@ namespace IdeologyPatch
     [HarmonyPatch(nameof(PreceptComp_SelfTookMemoryThought.Notify_MemberTookAction))]
     public static class Patch_PreceptComp_SelfTookMemoryThought_Notify_MemberTookAction
     {
-        public static bool Prefix(PreceptComp_SelfTookMemoryThought __instance, HistoryEvent ev, Precept precept, bool canApplySelfTookThoughts)
+        public static bool Prefix(PreceptComp_SelfTookMemoryThought __instance)
         {
-            if (__instance.thought == null)
+            if (IdeologyPatchSettings.DisableHumanFoodPlantThought && __instance.thought == ThoughtDef.Named("Ranching_SowedPlant"))
             {
                 return false;
             }

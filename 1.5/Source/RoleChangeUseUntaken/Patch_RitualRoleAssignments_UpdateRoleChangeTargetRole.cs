@@ -11,17 +11,20 @@ namespace IdeologyPatch.RoleChangeUseUntaken
     {
         public static void Postfix(RitualRoleAssignments __instance, Pawn pawn)
         {
-            Ideo ideo = pawn.Ideo;
-            if ((ideo != null ? ideo.GetRole(pawn) : null) == null)
+            if (IdeologyPatchSettings.RoleChangeUseUntaken)
             {
-                Precept_Role roleToChangeTo = RitualUtility.AllRolesForPawn(pawn).FirstOrDefault(role => 
-                    role.Active && 
-                    role.RequirementsMet(pawn) && 
-                    !PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists.Any(p => role.IsAssigned(p))
-                );
-                if (roleToChangeTo != null)
+                Ideo ideo = pawn.Ideo;
+                if ((ideo != null ? ideo.GetRole(pawn) : null) == null)
                 {
-                    __instance.SetRoleChangeSelection(roleToChangeTo);
+                    Precept_Role roleToChangeTo = RitualUtility.AllRolesForPawn(pawn).FirstOrDefault(role =>
+                        role.Active &&
+                        role.RequirementsMet(pawn) &&
+                        !PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists.Any(p => role.IsAssigned(p))
+                    );
+                    if (roleToChangeTo != null)
+                    {
+                        __instance.SetRoleChangeSelection(roleToChangeTo);
+                    }
                 }
             }
         }

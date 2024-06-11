@@ -9,7 +9,10 @@ namespace IdeologyPatch.PruningTime
     {
         public static void Postfix(ref int ___numPositions)
         {
-            ___numPositions = 1;
+            if (IdeologyPatchSettings.PruningTime)
+            {
+                ___numPositions = 1;
+            }
         }
     }
 }

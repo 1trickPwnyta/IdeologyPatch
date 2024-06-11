@@ -10,7 +10,7 @@ namespace IdeologyPatch
     {
         public static bool Prefix(PreceptComp_Thought __instance, ref IEnumerable<string> __result)
         {
-            if (__instance.thought == null)
+            if (IdeologyPatchSettings.DisableHumanFoodPlantThought && __instance.thought == ThoughtDef.Named("Ranching_SowedPlant"))
             {
                 __result = new List<string>();
                 return false;

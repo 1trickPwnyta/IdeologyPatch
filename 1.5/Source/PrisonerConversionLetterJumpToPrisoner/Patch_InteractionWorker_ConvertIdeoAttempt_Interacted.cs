@@ -12,7 +12,7 @@ namespace IdeologyPatch.PrisonerConversionLetterJumpToPrisoner
     {
         public static void Postfix(Pawn initiator, Pawn recipient, LookTargets lookTargets)
         {
-            if (lookTargets != null)
+            if (IdeologyPatchSettings.PrisonerConversionLetterJumpToPrisoner && lookTargets != null)
             {
                 lookTargets.targets = (new GlobalTargetInfo[] { recipient, initiator }).ToList();
             }

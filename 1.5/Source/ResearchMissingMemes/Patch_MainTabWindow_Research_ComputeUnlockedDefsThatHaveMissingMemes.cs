@@ -12,7 +12,7 @@ namespace IdeologyPatch.ResearchMissingMemes
     {
         public static void Postfix(ref List<ValueTuple<BuildableDef, List<string>>> __result, ResearchProjectDef project)
         {
-            if (__result.Count < project.UnlockedDefs.Count)
+            if (IdeologyPatchSettings.ResearchMissingMemes && __result.Count < project.UnlockedDefs.Count)
             {
                 __result = new List<ValueTuple<BuildableDef, List<string>>>();
             }
