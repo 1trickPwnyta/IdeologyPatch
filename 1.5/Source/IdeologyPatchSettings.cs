@@ -17,6 +17,7 @@ namespace IdeologyPatch
         public static bool FemaleNudity = true;
         public static bool PantsOnly = true;
         public static bool FungusPreferredDisablesDarkThought = true;
+        public static bool DarklightDefault = true;
 
         public static void DoSettingsWindowContents(Rect inRect)
         {
@@ -36,6 +37,7 @@ namespace IdeologyPatch
             listingStandard.CheckboxLabeled("IdeologyPatch_FemaleNudity".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref FemaleNudity);
             listingStandard.CheckboxLabeled("IdeologyPatch_PantsOnly".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PantsOnly);
             listingStandard.CheckboxLabeled("IdeologyPatch_FungusPreferredDisablesDarkThought".Translate(), ref FungusPreferredDisablesDarkThought);
+            listingStandard.CheckboxLabeled("IdeologyPatch_DarklightDefault".Translate(), ref DarklightDefault);
 
             listingStandard.End();
         }
@@ -54,6 +56,7 @@ namespace IdeologyPatch
             Scribe_Values.Look(ref FemaleNudity, "FemaleNudity", true);
             Scribe_Values.Look(ref PantsOnly, "PantsOnly", true);
             Scribe_Values.Look(ref FungusPreferredDisablesDarkThought, "FungusPreferredDisablesDarkThought", true);
+            Scribe_Values.Look(ref DarklightDefault, "DarklightDefault", true);
         }
     }
 }

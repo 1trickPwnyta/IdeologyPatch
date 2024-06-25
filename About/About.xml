@@ -23,8 +23,10 @@ Full list of tweaks:
 - Changes the nudity precept "Pants at most" to "Pants only", which does the same thing but is worded correctly.
 - Pawns with an ideology that prohibit recreational drugs will no longer randomly use recreational drugs unless they have a chemical need trait.
 - Gauranlen tree-connected pawns will no longer ignore their needs for hours at a time while pruning the tree. It's not like the tree is the golden cube.
+- Newly built lights default to darklight setting if the player's primary ideology prefers darklight.
 
 === Updates ===
+06/25/2024: Use darklight by default in darkness ideologies
 06/11/2024: Add settings to toggle each tweak
 05/24/2024: Remove artificial enhancement calculation change. Genies were not bugged after all.
 04/29/2024: Prevent pawns from pruning the tree non-stop while ignoring their own needs

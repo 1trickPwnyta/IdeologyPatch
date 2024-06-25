@@ -13,4 +13,5 @@
 	<IdeologyPatch_FemaleNudity>Default female clothing precept to Pants</IdeologyPatch_FemaleNudity>
 	<IdeologyPatch_PantsOnly>Change name of "Pants at most" to "Pants only"</IdeologyPatch_PantsOnly>
 	<IdeologyPatch_FungusPreferredDisablesDarkThought>Disable darkness mood penalty for Fungus: preferred precept</IdeologyPatch_FungusPreferredDisablesDarkThought>
+	<IdeologyPatch_DarklightDefault>Newly built lights default to darklight if precept is present</IdeologyPatch_DarklightDefault>
 </LanguageData>
