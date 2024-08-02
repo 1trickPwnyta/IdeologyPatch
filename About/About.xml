@@ -26,6 +26,7 @@ Full list of tweaks:
 - Newly built lights default to darklight setting if the player's primary ideology prefers darklight.
 
 === Updates ===
+08/02/2024: Remove patch from 1.4 version
 06/25/2024: Use darklight by default in darkness ideologies
 06/11/2024: Add settings to toggle each tweak
 05/24/2024: Remove artificial enhancement calculation change. Genies were not bugged after all.

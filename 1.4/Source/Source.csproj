@@ -36,7 +36,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="1.4">
-      <HintPath>..\..\..\RimWorld\RimWorld Code 1.4\1.4.dll</HintPath>
+      <HintPath>..\..\..\..\..\RimWorld\RimWorld Code 1.4\1.4.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Debug.cs" />
-    <Compile Include="DisableHumanFoodPlantThought\Patch_Log_Error.cs" />
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_SelfTookMemoryThought_Notify_MemberTookAction.cs" />
     <Compile Include="IdeologyPatchMod.cs" />
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_SelfTookMemoryThought_get_TraitsAffecting.cs" />
@@ -67,6 +66,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>powershell -ExecutionPolicy Bypass ..\Deploy.ps1</PostBuildEvent>
+    <PostBuildEvent>powershell -ExecutionPolicy Bypass ..\..\Deploy.ps1</PostBuildEvent>
   </PropertyGroup>
 </Project>
