@@ -14,4 +14,6 @@
 	<IdeologyPatch_PantsOnly>Change name of "Pants at most" to "Pants only"</IdeologyPatch_PantsOnly>
 	<IdeologyPatch_FungusPreferredDisablesDarkThought>Disable darkness mood penalty for Fungus: preferred precept</IdeologyPatch_FungusPreferredDisablesDarkThought>
 	<IdeologyPatch_DarklightDefault>Newly built lights default to darklight if precept is present</IdeologyPatch_DarklightDefault>
+	<IdeologyPatch_RitualCooldownMessage>Show a message when rituals can be performed again without repeat penalty</IdeologyPatch_RitualCooldownMessage>
+	<IdeologyPatch_RitualCanBePerformedAgain>{0} can be performed again without repeat penalty.</IdeologyPatch_RitualCanBePerformedAgain>
 </LanguageData>

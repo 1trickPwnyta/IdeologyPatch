@@ -57,6 +57,7 @@
     <Compile Include="Debug.cs" />
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_SelfTookMemoryThought.cs" />
     <Compile Include="FungusPreferredDisablesDarkThought\Patch_ThoughtWorker_Dark.cs" />
+    <Compile Include="GameComponent_IdeologyPatch.cs" />
     <Compile Include="IdeologyPatchMod.cs" />
     <Compile Include="DryadWanderRadius\Patch_JobGiver_WanderNearConnectedTree.cs" />
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_Thought.cs" />
@@ -74,6 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RitualCooldownMessage\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
