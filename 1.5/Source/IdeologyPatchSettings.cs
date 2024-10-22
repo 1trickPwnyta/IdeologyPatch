@@ -19,6 +19,7 @@ namespace IdeologyPatch
         public static bool FungusPreferredDisablesDarkThought = true;
         public static bool DarklightDefault = true;
         public static bool RitualCooldownMessage = true;
+        public static bool LookChangeDesiredFix = true;
 
         public static void DoSettingsWindowContents(Rect inRect)
         {
@@ -40,6 +41,7 @@ namespace IdeologyPatch
             listingStandard.CheckboxLabeled("IdeologyPatch_FungusPreferredDisablesDarkThought".Translate(), ref FungusPreferredDisablesDarkThought);
             listingStandard.CheckboxLabeled("IdeologyPatch_DarklightDefault".Translate(), ref DarklightDefault);
             listingStandard.CheckboxLabeled("IdeologyPatch_RitualCooldownMessage".Translate(), ref RitualCooldownMessage);
+            listingStandard.CheckboxLabeled("IdeologyPatch_LookChangeDesiredFix".Translate(), ref LookChangeDesiredFix);
 
             listingStandard.End();
         }
@@ -60,6 +62,7 @@ namespace IdeologyPatch
             Scribe_Values.Look(ref FungusPreferredDisablesDarkThought, "FungusPreferredDisablesDarkThought", true);
             Scribe_Values.Look(ref DarklightDefault, "DarklightDefault", true);
             Scribe_Values.Look(ref RitualCooldownMessage, "RitualCooldownMessage", true);
+            Scribe_Values.Look(ref LookChangeDesiredFix, "LookChangeDesiredFix", true);
         }
     }
 }

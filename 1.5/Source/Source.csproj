@@ -62,6 +62,8 @@
     <Compile Include="DryadWanderRadius\Patch_JobGiver_WanderNearConnectedTree.cs" />
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_Thought.cs" />
     <Compile Include="IdeologyPatchSettings.cs" />
+    <Compile Include="LookChangeDesiredFix\Patch_JobGiver_UseStylingStationAutomatic.cs" />
+    <Compile Include="LookChangeDesiredFix\Patch_PawnStyleItemChooser.cs" />
     <Compile Include="PatchOperationReplaceIf.cs" />
     <Compile Include="PatchOperationRemoveIf.cs" />
     <Compile Include="PatchOperationAddIf.cs" />

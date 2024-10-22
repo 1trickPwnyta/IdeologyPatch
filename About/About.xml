@@ -25,6 +25,7 @@ Full list of tweaks:
 - Gauranlen tree-connected pawns will no longer ignore their needs for hours at a time while pruning the tree. It's not like the tree is the golden cube.
 - Newly built lights default to darklight setting if the player's primary ideology prefers darklight.
 - Shows a message when an ideology ritual comes off cooldown so you don't forget to perform it again.
+- Brings back the "Look change desired" mechanic that mysteriously disappears with Biotech enabled.
 
 === Updates ===
 08/02/2024: Remove patch from 1.4 version

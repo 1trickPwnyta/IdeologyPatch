@@ -15,5 +15,6 @@
 	<IdeologyPatch_FungusPreferredDisablesDarkThought>Disable darkness mood penalty for Fungus: preferred precept</IdeologyPatch_FungusPreferredDisablesDarkThought>
 	<IdeologyPatch_DarklightDefault>Newly built lights default to darklight if precept is present</IdeologyPatch_DarklightDefault>
 	<IdeologyPatch_RitualCooldownMessage>Show a message when rituals can be performed again without repeat penalty</IdeologyPatch_RitualCooldownMessage>
+	<IdeologyPatch_LookChangeDesiredFix>Allow "Look change desired" even with Biotech enabled</IdeologyPatch_LookChangeDesiredFix>
 	<IdeologyPatch_RitualCanBePerformedAgain>{0} can be performed again without repeat penalty.</IdeologyPatch_RitualCanBePerformedAgain>
 </LanguageData>
