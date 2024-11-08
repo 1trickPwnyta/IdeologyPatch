@@ -16,5 +16,6 @@
 	<IdeologyPatch_DarklightDefault>Newly built lights default to darklight if precept is present</IdeologyPatch_DarklightDefault>
 	<IdeologyPatch_RitualCooldownMessage>Show a message when rituals can be performed again without repeat penalty</IdeologyPatch_RitualCooldownMessage>
 	<IdeologyPatch_LookChangeDesiredFix>Allow "Look change desired" even with Biotech enabled</IdeologyPatch_LookChangeDesiredFix>
+	<IdeologyPatch_NegativeApparelDesire>Pawns will wear even "negative" apparel automatically if their ideology prefers it</IdeologyPatch_NegativeApparelDesire>
 	<IdeologyPatch_RitualCanBePerformedAgain>{0} can be performed again without repeat penalty.</IdeologyPatch_RitualCanBePerformedAgain>
 </LanguageData>

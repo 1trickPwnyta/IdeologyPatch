@@ -63,6 +63,7 @@
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_Thought.cs" />
     <Compile Include="IdeologyPatchSettings.cs" />
     <Compile Include="LookChangeDesiredFix\Patch_PawnStyleItemChooser.cs" />
+    <Compile Include="NegativeApparelDesire\Patch_JobGiver_OptimizeApparel.cs" />
     <Compile Include="PatchOperationReplaceIf.cs" />
     <Compile Include="PatchOperationRemoveIf.cs" />
     <Compile Include="PatchOperationAddIf.cs" />
@@ -72,14 +73,13 @@
     <Compile Include="PruningTime\Patch_JobDriver_PruneGauranlenTre.cs" />
     <Compile Include="RecreationalDrugAvoidance\Patch_JoyGiver_TakeDrug.cs" />
     <Compile Include="ResearchMissingMemes\Patch_MainTabWindow_Research_ComputeUnlockedDefsThatHaveMissingMemes.cs" />
+    <Compile Include="RitualCooldownMessage\RitualCooldownUtility.cs" />
     <Compile Include="RoleChangeUseUntaken\Patch_RitualRoleAssignments_UpdateRoleChangeTargetRole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RitualCooldownMessage\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>powershell -ExecutionPolicy Bypass ..\..\Deploy.ps1</PostBuildEvent>

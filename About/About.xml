@@ -26,6 +26,7 @@ Full list of tweaks:
 - Newly built lights default to darklight setting if the player's primary ideology prefers darklight.
 - Shows a message when an ideology ritual comes off cooldown so you don't forget to perform it again.
 - Brings back the "Look change desired" mechanic that mysteriously disappears with Biotech enabled.
+- Pawns with ideologies that prefer "negative" apparel such as blindfolds will now automatically wear that apparel anyway without being forced.
 
 === Updates ===
 10/22/2024: Add message for ideology ritual cooldown ending

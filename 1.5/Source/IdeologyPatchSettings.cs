@@ -20,6 +20,7 @@ namespace IdeologyPatch
         public static bool DarklightDefault = true;
         public static bool RitualCooldownMessage = true;
         public static bool LookChangeDesiredFix = true;
+        public static bool NegativeApparelDesire = true;
 
         public static void DoSettingsWindowContents(Rect inRect)
         {
@@ -42,6 +43,7 @@ namespace IdeologyPatch
             listingStandard.CheckboxLabeled("IdeologyPatch_DarklightDefault".Translate(), ref DarklightDefault);
             listingStandard.CheckboxLabeled("IdeologyPatch_RitualCooldownMessage".Translate(), ref RitualCooldownMessage);
             listingStandard.CheckboxLabeled("IdeologyPatch_LookChangeDesiredFix".Translate(), ref LookChangeDesiredFix);
+            listingStandard.CheckboxLabeled("IdeologyPatch_NegativeApparelDesire".Translate(), ref NegativeApparelDesire);
 
             listingStandard.End();
         }
@@ -63,6 +65,7 @@ namespace IdeologyPatch
             Scribe_Values.Look(ref DarklightDefault, "DarklightDefault", true);
             Scribe_Values.Look(ref RitualCooldownMessage, "RitualCooldownMessage", true);
             Scribe_Values.Look(ref LookChangeDesiredFix, "LookChangeDesiredFix", true);
+            Scribe_Values.Look(ref NegativeApparelDesire, "NegativeApparelDesire", true);
         }
     }
 }
