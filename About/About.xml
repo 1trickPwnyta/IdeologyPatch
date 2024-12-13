@@ -29,6 +29,7 @@ Full list of tweaks:
 - Pawns with ideologies that prefer "negative" apparel such as blindfolds will now automatically wear that apparel anyway without being forced.
 
 === Updates ===
+12/12/2024: Fix the "Look change desired" mechanic with Biotech enabled and add negative apparel desire feature
 10/22/2024: Add message for ideology ritual cooldown ending
 08/02/2024: Remove patch from 1.4 version
 06/25/2024: Use darklight by default in darkness ideologies
