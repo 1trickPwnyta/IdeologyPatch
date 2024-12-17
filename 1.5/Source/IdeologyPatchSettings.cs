@@ -22,6 +22,7 @@ namespace IdeologyPatch
         public static bool LookChangeDesiredFix = true;
         public static bool NegativeApparelDesire = true;
         public static bool RelicsCollectedNotAgain = true;
+        public static bool ForbidArchonexusCorpses = true;
 
         public static void DoSettingsWindowContents(Rect inRect)
         {
@@ -46,6 +47,7 @@ namespace IdeologyPatch
             listingStandard.CheckboxLabeled("IdeologyPatch_LookChangeDesiredFix".Translate(), ref LookChangeDesiredFix);
             listingStandard.CheckboxLabeled("IdeologyPatch_NegativeApparelDesire".Translate(), ref NegativeApparelDesire);
             listingStandard.CheckboxLabeled("IdeologyPatch_RelicsCollectedNotAgain".Translate(), ref RelicsCollectedNotAgain);
+            listingStandard.CheckboxLabeled("IdeologyPatch_ForbidArchonexusCorpses".Translate(), ref ForbidArchonexusCorpses);
 
             listingStandard.End();
         }
@@ -69,6 +71,7 @@ namespace IdeologyPatch
             Scribe_Values.Look(ref LookChangeDesiredFix, "LookChangeDesiredFix", true);
             Scribe_Values.Look(ref NegativeApparelDesire, "NegativeApparelDesire", true);
             Scribe_Values.Look(ref RelicsCollectedNotAgain, "RelicsCollectedNotAgain", true);
+            Scribe_Values.Look(ref ForbidArchonexusCorpses, "ForbidArchonexusCorpses", true);
         }
     }
 }

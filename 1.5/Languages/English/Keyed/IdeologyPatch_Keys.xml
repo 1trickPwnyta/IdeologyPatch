@@ -18,5 +18,6 @@
 	<IdeologyPatch_LookChangeDesiredFix>Allow "Look change desired" even with Biotech enabled</IdeologyPatch_LookChangeDesiredFix>
 	<IdeologyPatch_NegativeApparelDesire>Pawns will wear even "negative" apparel automatically if their ideology prefers it</IdeologyPatch_NegativeApparelDesire>
 	<IdeologyPatch_RelicsCollectedNotAgain>Bringing all relics to new archonexus colony does not trigger mood boost</IdeologyPatch_RelicsCollectedNotAgain>
+	<IdeologyPatch_ForbidArchonexusCorpses>Automatically forbid corpses that spawn near archonexus structures</IdeologyPatch_ForbidArchonexusCorpses>
 	<IdeologyPatch_RitualCanBePerformedAgain>{0} can be performed again without repeat penalty.</IdeologyPatch_RitualCanBePerformedAgain>
 </LanguageData>

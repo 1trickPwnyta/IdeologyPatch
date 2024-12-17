@@ -56,6 +56,7 @@
     <Compile Include="DarklightDefault\Patch_CompGlower.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_SelfTookMemoryThought.cs" />
+    <Compile Include="ForbidArchonexusCorpses\Patch_SymbolResolver_DesiccatedCorpses.cs" />
     <Compile Include="FungusPreferredDisablesDarkThought\Patch_ThoughtWorker_Dark.cs" />
     <Compile Include="GameComponent_IdeologyPatch.cs" />
     <Compile Include="IdeologyPatchMod.cs" />
