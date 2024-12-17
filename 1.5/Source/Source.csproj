@@ -72,6 +72,7 @@
     <Compile Include="PruningTime\Patch_CompTreeConnection.cs" />
     <Compile Include="PruningTime\Patch_JobDriver_PruneGauranlenTre.cs" />
     <Compile Include="RecreationalDrugAvoidance\Patch_JoyGiver_TakeDrug.cs" />
+    <Compile Include="RelicsCollectedNotAgain\Patch_IdeoUtility.cs" />
     <Compile Include="ResearchMissingMemes\Patch_MainTabWindow_Research_ComputeUnlockedDefsThatHaveMissingMemes.cs" />
     <Compile Include="RitualCooldownMessage\RitualCooldownUtility.cs" />
     <Compile Include="RoleChangeUseUntaken\Patch_RitualRoleAssignments_UpdateRoleChangeTargetRole.cs" />

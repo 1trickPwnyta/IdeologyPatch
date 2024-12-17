@@ -21,6 +21,7 @@ namespace IdeologyPatch
         public static bool RitualCooldownMessage = true;
         public static bool LookChangeDesiredFix = true;
         public static bool NegativeApparelDesire = true;
+        public static bool RelicsCollectedNotAgain = true;
 
         public static void DoSettingsWindowContents(Rect inRect)
         {
@@ -44,6 +45,7 @@ namespace IdeologyPatch
             listingStandard.CheckboxLabeled("IdeologyPatch_RitualCooldownMessage".Translate(), ref RitualCooldownMessage);
             listingStandard.CheckboxLabeled("IdeologyPatch_LookChangeDesiredFix".Translate(), ref LookChangeDesiredFix);
             listingStandard.CheckboxLabeled("IdeologyPatch_NegativeApparelDesire".Translate(), ref NegativeApparelDesire);
+            listingStandard.CheckboxLabeled("IdeologyPatch_RelicsCollectedNotAgain".Translate(), ref RelicsCollectedNotAgain);
 
             listingStandard.End();
         }
@@ -66,6 +68,7 @@ namespace IdeologyPatch
             Scribe_Values.Look(ref RitualCooldownMessage, "RitualCooldownMessage", true);
             Scribe_Values.Look(ref LookChangeDesiredFix, "LookChangeDesiredFix", true);
             Scribe_Values.Look(ref NegativeApparelDesire, "NegativeApparelDesire", true);
+            Scribe_Values.Look(ref RelicsCollectedNotAgain, "RelicsCollectedNotAgain", true);
         }
     }
 }

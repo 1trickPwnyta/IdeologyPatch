@@ -27,6 +27,7 @@ Full list of tweaks:
 - Shows a message when an ideology ritual comes off cooldown so you don't forget to perform it again.
 - Brings back the "Look change desired" mechanic that mysteriously disappears with Biotech enabled.
 - Pawns with ideologies that prefer "negative" apparel such as blindfolds will now automatically wear that apparel anyway without being forced.
+- If your ideology has only one relic and you bring it with you to a new colony in the archonexus quest, it will not retrigger the "all relics collected" moost boost.
 
 === Updates ===
 12/12/2024: Fix the "Look change desired" mechanic with Biotech enabled and add negative apparel desire feature
