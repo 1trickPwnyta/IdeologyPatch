@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllowGuestSlavePolicy\Patch_PawnColumnWorker_Outfit.cs" />
     <Compile Include="DarklightDefault\Patch_CompGlower.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_SelfTookMemoryThought.cs" />
