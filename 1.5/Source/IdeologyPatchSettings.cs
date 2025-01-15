@@ -26,6 +26,7 @@ namespace IdeologyPatch
         public static bool FactionRelationAdjustment = true;
         public static bool AllowGuestSlavePolicy = true;
         public static bool PaintableIdeoFloors = true;
+        public static bool SlavesWearHumanLeather = true;
 
         public static void DoSettingsWindowContents(Rect inRect)
         {
@@ -54,6 +55,7 @@ namespace IdeologyPatch
             listingStandard.CheckboxLabeled("IdeologyPatch_FactionRelationAdjustment".Translate(), ref FactionRelationAdjustment);
             listingStandard.CheckboxLabeled("IdeologyPatch_AllowGuestSlavePolicy".Translate(), ref AllowGuestSlavePolicy);
             listingStandard.CheckboxLabeled("IdeologyPatch_PaintableIdeoFloors".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PaintableIdeoFloors);
+            listingStandard.CheckboxLabeled("IdeologyPatch_SlavesWearHumanLeather".Translate(), ref SlavesWearHumanLeather);
 
             listingStandard.End();
         }
@@ -81,6 +83,7 @@ namespace IdeologyPatch
             Scribe_Values.Look(ref FactionRelationAdjustment, "FactionRelationAdjustment", true);
             Scribe_Values.Look(ref AllowGuestSlavePolicy, "AllowGuestSlavePolicy", true);
             Scribe_Values.Look(ref PaintableIdeoFloors, "PaintableIdeoFloors", true);
+            Scribe_Values.Look(ref SlavesWearHumanLeather, "SlavesWearHumanLeather", true);
         }
     }
 }
