@@ -21,5 +21,6 @@
 	<IdeologyPatch_ForbidArchonexusCorpses>Automatically forbid corpses that spawn near archonexus structures</IdeologyPatch_ForbidArchonexusCorpses>
 	<IdeologyPatch_FactionRelationAdjustment>Adjust initial enemy faction relations to inside natural goodwill range</IdeologyPatch_FactionRelationAdjustment>
 	<IdeologyPatch_AllowGuestSlavePolicy>Enable apparel policies for enslaved guests</IdeologyPatch_AllowGuestSlavePolicy>
+	<IdeologyPatch_PaintableIdeoFloors>Allow painting all non-textile ideology floors and floor slabs</IdeologyPatch_PaintableIdeoFloors>
 	<IdeologyPatch_RitualCanBePerformedAgain>{0} can be performed again without repeat penalty.</IdeologyPatch_RitualCanBePerformedAgain>
 </LanguageData>
