@@ -29,6 +29,7 @@ Full list of tweaks:
 - Pawns with ideologies that prefer "negative" apparel such as blindfolds will now automatically wear that apparel anyway without being forced.
 - If your ideology has only one relic and you bring it with you to a new colony in the archonexus quest, it will not retrigger the "all relics collected" moost boost.
 - Corpses that spawn near archonexus structures are forbidden by default.
+- Slaves can no longer run wild.
 
 === Updates ===
 12/12/2024: Fix the "Look change desired" mechanic with Biotech enabled and add negative apparel desire feature
