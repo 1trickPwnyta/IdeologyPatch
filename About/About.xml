@@ -30,6 +30,7 @@ Full list of tweaks:
 - If your ideology has only one relic and you bring it with you to a new colony in the archonexus quest, it will not retrigger the "all relics collected" moost boost.
 - Corpses that spawn near archonexus structures are forbidden by default.
 - Slaves can no longer run wild.
+- Slaves do not count as quest-related guests, ever. This fixes an issue where enslaving a quest-related guest, such as a refugee, prevents you from doing many things with them, such as sending them on caravans, extracting their genes, assigning them apparel policies, etc.
 
 === Updates ===
 12/12/2024: Fix the "Look change desired" mechanic with Biotech enabled and add negative apparel desire feature

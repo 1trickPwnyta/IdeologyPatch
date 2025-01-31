@@ -24,7 +24,7 @@ namespace IdeologyPatch
         public static bool RelicsCollectedNotAgain = true;
         public static bool ForbidArchonexusCorpses = true;
         public static bool FactionRelationAdjustment = true;
-        public static bool AllowGuestSlavePolicy = true;
+        public static bool SlavesArentQuestLodgers = true;
         public static bool PaintableIdeoFloors = true;
         public static bool SlavesWearHumanLeather = true;
         public static bool SlavesCantRunWild = true;
@@ -54,7 +54,7 @@ namespace IdeologyPatch
             listingStandard.CheckboxLabeled("IdeologyPatch_RelicsCollectedNotAgain".Translate(), ref RelicsCollectedNotAgain);
             listingStandard.CheckboxLabeled("IdeologyPatch_ForbidArchonexusCorpses".Translate(), ref ForbidArchonexusCorpses);
             listingStandard.CheckboxLabeled("IdeologyPatch_FactionRelationAdjustment".Translate(), ref FactionRelationAdjustment);
-            listingStandard.CheckboxLabeled("IdeologyPatch_AllowGuestSlavePolicy".Translate(), ref AllowGuestSlavePolicy);
+            listingStandard.CheckboxLabeled("IdeologyPatch_SlavesArentQuestLodgers".Translate(), ref SlavesArentQuestLodgers);
             listingStandard.CheckboxLabeled("IdeologyPatch_PaintableIdeoFloors".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PaintableIdeoFloors);
             listingStandard.CheckboxLabeled("IdeologyPatch_SlavesWearHumanLeather".Translate(), ref SlavesWearHumanLeather);
             listingStandard.CheckboxLabeled("IdeologyPatch_SlavesCantRunWild".Translate(), ref SlavesCantRunWild);
@@ -83,7 +83,7 @@ namespace IdeologyPatch
             Scribe_Values.Look(ref RelicsCollectedNotAgain, "RelicsCollectedNotAgain", true);
             Scribe_Values.Look(ref ForbidArchonexusCorpses, "ForbidArchonexusCorpses", true);
             Scribe_Values.Look(ref FactionRelationAdjustment, "FactionRelationAdjustment", true);
-            Scribe_Values.Look(ref AllowGuestSlavePolicy, "AllowGuestSlavePolicy", true);
+            Scribe_Values.Look(ref SlavesArentQuestLodgers, "SlavesArentQuestLodgers", true);
             Scribe_Values.Look(ref PaintableIdeoFloors, "PaintableIdeoFloors", true);
             Scribe_Values.Look(ref SlavesWearHumanLeather, "SlavesWearHumanLeather", true);
             Scribe_Values.Look(ref SlavesCantRunWild, "SlavesCantRunWild", true);
