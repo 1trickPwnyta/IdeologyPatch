@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using IdeologyPatch.SlavesWearHumanLeather;
 using UnityEngine;
 using Verse;
 
@@ -15,6 +16,10 @@ namespace IdeologyPatch
         {
             var harmony = new Harmony(PACKAGE_ID);
             harmony.PatchAll();
+            if (AccessTools.TypeByName("AnomalyPatch.AvoidDreadLeather.PatchUtility_JobGiver_OptimizeApparel") != null)
+            {
+                harmony.Patch(AccessTools.TypeByName("AnomalyPatch.AvoidDreadLeather.PatchUtility_JobGiver_OptimizeApparel").Method("ModifyApparelScore"), null, null, typeof(CompatibilityPatch_AnomalyPatch_PatchUtility_JobGiver_OptimizeApparel).Method(nameof(CompatibilityPatch_AnomalyPatch_PatchUtility_JobGiver_OptimizeApparel.Transpiler)));
+            }
 
             Settings = GetSettings<IdeologyPatchSettings>();
 

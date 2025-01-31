@@ -82,6 +82,7 @@
     <Compile Include="RitualCooldownMessage\RitualCooldownUtility.cs" />
     <Compile Include="RoleChangeUseUntaken\Patch_RitualRoleAssignments_UpdateRoleChangeTargetRole.cs" />
     <Compile Include="SlavesCantRunWild\Patch_MentalBreakWorker_RunWild.cs" />
+    <Compile Include="SlavesWearHumanLeather\CompatibilityPatch_AnomalyPatch_PatchUtility_JobGiver_OptimizeApparel.cs" />
     <Compile Include="SlavesWearHumanLeather\Patch_JobGiver_OptimizeApparel.cs" />
   </ItemGroup>
   <ItemGroup>
