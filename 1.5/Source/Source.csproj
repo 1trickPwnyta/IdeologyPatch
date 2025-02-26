@@ -54,7 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SlavesArentQuestLodgers\Patch_QuestUtility.cs" />
-    <Compile Include="DarklightDefault\Patch_CompGlower.cs" />
+    <Compile Include="DarklightDefault\Patch_Thing.cs" />
     <Compile Include="Debug.cs" />
     <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_SelfTookMemoryThought.cs" />
     <Compile Include="FactionRelationAdjustment\FactionRelationUtility.cs" />
