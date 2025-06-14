@@ -3,9 +3,11 @@
 	<name>1trickPwnyta's Ideology Patch</name>
 	<author>1trickPwnyta</author>
 	<packageId>ideologypatch.1trickPwnyta</packageId>
+	<modVersion IgnoreIfNoMatchingField="True">1.10.1</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
+		<li>1.6</li>
 	</supportedVersions>
 	<description>
 This mod makes a handful of small tweaks to the Ideology DLC that are intended to make the game a bit more enjoyable without changing the gameplay too much.
@@ -33,6 +35,7 @@ Full list of tweaks:
 - Slaves do not count as quest-related guests, ever. This fixes an issue where enslaving a quest-related guest, such as a refugee, prevents you from doing many things with them, such as sending them on caravans, extracting their genes, assigning them apparel policies, etc.
 
 === Updates ===
+06/13/2025: Update to 1.6
 12/12/2024: Fix the "Look change desired" mechanic with Biotech enabled and add negative apparel desire feature
 10/22/2024: Add message for ideology ritual cooldown ending
 08/02/2024: Remove patch from 1.4 version
