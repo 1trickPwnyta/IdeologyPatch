@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51AB4547-104E-4BDF-99E1-159DDB329E1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IdeologyPatch</RootNamespace>
+    <AssemblyName>IdeologyPatch</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="1.6">
+      <HintPath>..\..\..\..\..\RimWorld\RimWorld Code 1.6\1.6.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SlavesArentQuestLodgers\Patch_QuestUtility.cs" />
+    <Compile Include="DarklightDefault\Patch_Thing.cs" />
+    <Compile Include="Debug.cs" />
+    <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_SelfTookMemoryThought.cs" />
+    <Compile Include="FactionRelationAdjustment\FactionRelationUtility.cs" />
+    <Compile Include="FactionRelationAdjustment\Patch_FactionUtility.cs" />
+    <Compile Include="FactionRelationAdjustment\Patch_Game.cs" />
+    <Compile Include="ForbidArchonexusCorpses\Patch_SymbolResolver_DesiccatedCorpses.cs" />
+    <Compile Include="FungusPreferredDisablesDarkThought\Patch_ThoughtWorker_Dark.cs" />
+    <Compile Include="GameComponent_IdeologyPatch.cs" />
+    <Compile Include="IdeologyPatchMod.cs" />
+    <Compile Include="DryadWanderRadius\Patch_JobGiver_WanderNearConnectedTree.cs" />
+    <Compile Include="DisableHumanFoodPlantThought\Patch_PreceptComp_Thought.cs" />
+    <Compile Include="IdeologyPatchSettings.cs" />
+    <Compile Include="LookChangeDesiredFix\Patch_PawnStyleItemChooser.cs" />
+    <Compile Include="NegativeApparelDesire\Patch_JobGiver_OptimizeApparel.cs" />
+    <Compile Include="PatchOperationReplaceIf.cs" />
+    <Compile Include="PatchOperationRemoveIf.cs" />
+    <Compile Include="PatchOperationAddIf.cs" />
+    <Compile Include="PrisonerConversionLetterJumpToPrisoner\Patch_InteractionWorker_ConvertIdeoAttempt_Interacted.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PruningTime\Patch_CompTreeConnection.cs" />
+    <Compile Include="PruningTime\Patch_JobDriver_PruneGauranlenTre.cs" />
+    <Compile Include="RelicsCollectedNotAgain\Patch_IdeoUtility.cs" />
+    <Compile Include="ResearchMissingMemes\Patch_MainTabWindow_Research_ComputeUnlockedDefsThatHaveMissingMemes.cs" />
+    <Compile Include="RitualCooldownMessage\RitualCooldownUtility.cs" />
+    <Compile Include="RoleChangeUseUntaken\Patch_RitualRoleAssignments_UpdateRoleChangeTargetRole.cs" />
+    <Compile Include="SlavesCantRunWild\Patch_MentalBreakWorker_RunWild.cs" />
+    <Compile Include="SlavesWearHumanLeather\CompatibilityPatch_AnomalyPatch_PatchUtility_JobGiver_OptimizeApparel.cs" />
+    <Compile Include="SlavesWearHumanLeather\Patch_JobGiver_OptimizeApparel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>powershell -ExecutionPolicy Bypass ..\..\Deploy.ps1</PostBuildEvent>
+  </PropertyGroup>
+</Project>

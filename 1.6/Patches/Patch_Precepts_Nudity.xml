@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="IdeologyPatch.PatchOperationAddIf">
+		<xpath>/Defs/PreceptDef[defName="Nudity_Female_UncoveredGroinDisapproved"]</xpath>
+		<value>
+			<defaultSelectionWeight>1</defaultSelectionWeight>
+		</value>
+		<setting>FemaleNudity</setting>
+	</Operation>
+	<Operation Class="IdeologyPatch.PatchOperationRemoveIf">
+		<xpath>/Defs/PreceptDef[defName="Nudity_Female_UncoveredGroinOrChestDisapproved"]/defaultSelectionWeight</xpath>
+		<setting>FemaleNudity</setting>
+	</Operation>
+	<Operation Class="IdeologyPatch.PatchOperationReplaceIf">
+		<xpath>/Defs/PreceptDef[defName="Nudity_Male_CoveringAnythingButGroinDisapproved"]/label</xpath>
+		<value>
+			<label>pants only</label>
+		</value>
+		<setting>PantsOnly</setting>
+	</Operation>
+	<Operation Class="IdeologyPatch.PatchOperationReplaceIf">
+		<xpath>/Defs/PreceptDef[defName="Nudity_Female_CoveringAnythingButGroinDisapproved"]/label</xpath>
+		<value>
+			<label>pants only</label>
+		</value>
+		<setting>PantsOnly</setting>
+	</Operation>
+</Patch>

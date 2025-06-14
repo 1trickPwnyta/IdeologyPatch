@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="IdeologyPatch.PatchOperationAddIf">
+		<xpath>/Defs/TerrainDef[defName="Plates_Spikecore"]</xpath>
+		<value>
+			<isPaintable>true</isPaintable>
+		</value>
+		<setting>PaintableIdeoFloors</setting>
+	</Operation>
+</Patch>

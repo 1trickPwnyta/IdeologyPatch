@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="IdeologyPatch.PatchOperationRemoveIf">
+		<xpath>/Defs/PreceptDef[defName="Lovin_SpouseOnly_Strict"]/defaultSelectionWeight</xpath>
+		<setting>PremaritalSex</setting>
+	</Operation>
+	<Operation Class="IdeologyPatch.PatchOperationRemoveIf">
+		<xpath>/Defs/PreceptDef[defName="Lovin_SpouseOnly_Moderate"]/defaultSelectionWeight</xpath>
+		<setting>PremaritalSex</setting>
+	</Operation>
+	<Operation Class="IdeologyPatch.PatchOperationRemoveIf">
+		<xpath>/Defs/PreceptDef[defName="Lovin_SpouseOnly_Mild"]/defaultSelectionWeight</xpath>
+		<setting>PremaritalSex</setting>
+	</Operation>
+</Patch>

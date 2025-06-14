@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="IdeologyPatch.PatchOperationAddIf">
+		<xpath>/Defs/PreceptDef[defName="Corpses_DontCare"]/associatedMemes</xpath>
+		<value>
+		  <li>Bloodfeeding</li>
+		</value>
+		<setting>BloodfeedingCorpsesDontCare</setting>
+	</Operation>
+	<Operation Class="IdeologyPatch.PatchOperationAddIf">
+		<xpath>/Defs/PreceptDef[defName="Corpses_DontCare"]/requiredMemes</xpath>
+		<value>
+		  <li>Bloodfeeding</li>
+		</value>
+		<setting>BloodfeedingCorpsesDontCare</setting>
+	</Operation>
+</Patch>

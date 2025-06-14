@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[@Name="BuildingFloorCoveringBase"]/building/paintable</xpath>
+		<nomatch Class="IdeologyPatch.PatchOperationAddIf">
+			<xpath>/Defs/ThingDef[@Name="BuildingFloorCoveringBase"]/building</xpath>
+			<value>
+				<paintable>true</paintable>
+			</value>
+			<setting>PaintableIdeoFloors</setting>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="RusticRug_Medium"]/building/paintable</xpath>
+		<nomatch Class="IdeologyPatch.PatchOperationAddIf">
+			<xpath>/Defs/ThingDef[defName="RusticRug_Medium"]/building</xpath>
+			<value>
+				<paintable>false</paintable>
+			</value>
+			<setting>PaintableIdeoFloors</setting>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="RusticRug_Broad"]/building/paintable</xpath>
+		<nomatch Class="IdeologyPatch.PatchOperationAddIf">
+			<xpath>/Defs/ThingDef[defName="RusticRug_Broad"]/building</xpath>
+			<value>
+				<paintable>false</paintable>
+			</value>
+			<setting>PaintableIdeoFloors</setting>
+		</nomatch>
+	</Operation>
+</Patch>
