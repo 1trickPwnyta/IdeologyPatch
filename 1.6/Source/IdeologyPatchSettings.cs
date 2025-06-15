@@ -28,36 +28,66 @@ namespace IdeologyPatch
         public static bool SlavesWearHumanLeather = true;
         public static bool SlavesCantRunWild = true;
 
+        private static Vector2 scrollPosition;
+        private static float y;
+
         public static void DoSettingsWindowContents(Rect inRect)
         {
-            Listing_Standard listingStandard = new Listing_Standard();
+            Rect viewRect = new Rect(0f, 0f, inRect.width - 20f, y);
+            Widgets.BeginScrollView(inRect, ref scrollPosition, viewRect);
 
-            listingStandard.Begin(inRect);
+            Listing_Standard listing = new Listing_Standard() { maxOneColumn = true };
+            listing.Begin(viewRect);
 
-            listingStandard.CheckboxLabeled("IdeologyPatch_DisableHumanFoodPlantThought".Translate(), ref DisableHumanFoodPlantThought);
-            listingStandard.CheckboxLabeled("IdeologyPatch_DryadWanderRadius".Translate(), ref DryadWanderRadius);
-            listingStandard.CheckboxLabeled("IdeologyPatch_PrisonerConversionLetterJumpToPrisoner".Translate(), ref PrisonerConversionLetterJumpToPrisoner);
-            listingStandard.CheckboxLabeled("IdeologyPatch_PruningTime".Translate(), ref PruningTime);
-            listingStandard.CheckboxLabeled("IdeologyPatch_ResearchMissingMemes".Translate(), ref ResearchMissingMemes);
-            listingStandard.CheckboxLabeled("IdeologyPatch_RoleChangeUseUntaken".Translate(), ref RoleChangeUseUntaken);
-            listingStandard.CheckboxLabeled("IdeologyPatch_BloodfeedingCorpsesDontCare".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref BloodfeedingCorpsesDontCare);
-            listingStandard.CheckboxLabeled("IdeologyPatch_PremaritalSex".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PremaritalSex);
-            listingStandard.CheckboxLabeled("IdeologyPatch_FemaleNudity".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref FemaleNudity);
-            listingStandard.CheckboxLabeled("IdeologyPatch_PantsOnly".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PantsOnly);
-            listingStandard.CheckboxLabeled("IdeologyPatch_FungusPreferredDisablesDarkThought".Translate(), ref FungusPreferredDisablesDarkThought);
-            listingStandard.CheckboxLabeled("IdeologyPatch_DarklightDefault".Translate(), ref DarklightDefault);
-            listingStandard.CheckboxLabeled("IdeologyPatch_RitualCooldownMessage".Translate(), ref RitualCooldownMessage);
-            listingStandard.CheckboxLabeled("IdeologyPatch_LookChangeDesiredFix".Translate(), ref LookChangeDesiredFix);
-            listingStandard.CheckboxLabeled("IdeologyPatch_NegativeApparelDesire".Translate(), ref NegativeApparelDesire);
-            listingStandard.CheckboxLabeled("IdeologyPatch_RelicsCollectedNotAgain".Translate(), ref RelicsCollectedNotAgain);
-            listingStandard.CheckboxLabeled("IdeologyPatch_ForbidArchonexusCorpses".Translate(), ref ForbidArchonexusCorpses);
-            listingStandard.CheckboxLabeled("IdeologyPatch_FactionRelationAdjustment".Translate(), ref FactionRelationAdjustment);
-            listingStandard.CheckboxLabeled("IdeologyPatch_SlavesArentQuestLodgers".Translate(), ref SlavesArentQuestLodgers);
-            listingStandard.CheckboxLabeled("IdeologyPatch_PaintableIdeoFloors".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PaintableIdeoFloors);
-            listingStandard.CheckboxLabeled("IdeologyPatch_SlavesWearHumanLeather".Translate(), ref SlavesWearHumanLeather);
-            listingStandard.CheckboxLabeled("IdeologyPatch_SlavesCantRunWild".Translate(), ref SlavesCantRunWild);
+            DoHeader(listing, "IdeologyPatch_MemesPrecepts");
+            listing.CheckboxLabeled("IdeologyPatch_PremaritalSex".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PremaritalSex);
+            listing.CheckboxLabeled("IdeologyPatch_FemaleNudity".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref FemaleNudity);
+            listing.CheckboxLabeled("IdeologyPatch_PantsOnly".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PantsOnly);
+            listing.CheckboxLabeled("IdeologyPatch_DisableHumanFoodPlantThought".Translate(), ref DisableHumanFoodPlantThought);
+            listing.CheckboxLabeled("IdeologyPatch_BloodfeedingCorpsesDontCare".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref BloodfeedingCorpsesDontCare);
+            listing.CheckboxLabeled("IdeologyPatch_FungusPreferredDisablesDarkThought".Translate(), ref FungusPreferredDisablesDarkThought);
+            listing.CheckboxLabeled("IdeologyPatch_DarklightDefault".Translate(), ref DarklightDefault);
+            listing.CheckboxLabeled("IdeologyPatch_ResearchMissingMemes".Translate(), ref ResearchMissingMemes);
 
-            listingStandard.End();
+            listing.Gap();
+
+            DoHeader(listing, "IdeologyPatch_Slaves");
+            listing.CheckboxLabeled("IdeologyPatch_SlavesArentQuestLodgers".Translate(), ref SlavesArentQuestLodgers);
+            listing.CheckboxLabeled("IdeologyPatch_SlavesWearHumanLeather".Translate(), ref SlavesWearHumanLeather);
+            listing.CheckboxLabeled("IdeologyPatch_SlavesCantRunWild".Translate(), ref SlavesCantRunWild);
+
+            listing.Gap();
+
+            DoHeader(listing, "IdeologyPatch_Practices");
+            listing.CheckboxLabeled("IdeologyPatch_PrisonerConversionLetterJumpToPrisoner".Translate(), ref PrisonerConversionLetterJumpToPrisoner);
+            listing.CheckboxLabeled("IdeologyPatch_RoleChangeUseUntaken".Translate(), ref RoleChangeUseUntaken);
+            listing.CheckboxLabeled("IdeologyPatch_RitualCooldownMessage".Translate(), ref RitualCooldownMessage);
+            listing.CheckboxLabeled("IdeologyPatch_LookChangeDesiredFix".Translate(), ref LookChangeDesiredFix);
+            listing.CheckboxLabeled("IdeologyPatch_NegativeApparelDesire".Translate(), ref NegativeApparelDesire);
+
+            listing.Gap();
+
+            DoHeader(listing, "IdeologyPatch_Misc");
+            listing.CheckboxLabeled("IdeologyPatch_PruningTime".Translate(), ref PruningTime);
+            listing.CheckboxLabeled("IdeologyPatch_DryadWanderRadius".Translate(), ref DryadWanderRadius);
+            listing.CheckboxLabeled("IdeologyPatch_RelicsCollectedNotAgain".Translate(), ref RelicsCollectedNotAgain);
+            listing.CheckboxLabeled("IdeologyPatch_ForbidArchonexusCorpses".Translate(), ref ForbidArchonexusCorpses);
+            listing.CheckboxLabeled("IdeologyPatch_FactionRelationAdjustment".Translate(), ref FactionRelationAdjustment);
+            listing.CheckboxLabeled("IdeologyPatch_PaintableIdeoFloors".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PaintableIdeoFloors);
+
+            y = listing.CurHeight;
+            listing.End();
+
+            Widgets.EndScrollView();
+        }
+
+        private static void DoHeader(Listing_Standard listing, string key)
+        {
+            using (new TextBlock(GameFont.Medium))
+            {
+                listing.Label(key.Translate());
+            }
+            listing.GapLine();
         }
 
         public override void ExposeData()

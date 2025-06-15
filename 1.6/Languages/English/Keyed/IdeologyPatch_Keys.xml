@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
+	<IdeologyPatch_MemesPrecepts>Ideology Memes and Precepts</IdeologyPatch_MemesPrecepts>
+	<IdeologyPatch_Slaves>Slaves</IdeologyPatch_Slaves>
+	<IdeologyPatch_Practices>Ideological Practices</IdeologyPatch_Practices>
+	<IdeologyPatch_Misc>Miscellaneous</IdeologyPatch_Misc>
 	<IdeologyPatch_RestartRequired>(requires restart)</IdeologyPatch_RestartRequired>
 	<IdeologyPatch_DisableHumanFoodPlantThought>Disable rancher thought about planting human food</IdeologyPatch_DisableHumanFoodPlantThought>
 	<IdeologyPatch_DryadWanderRadius>Limit dryad wander radius to the building radius of the gauranlen tree</IdeologyPatch_DryadWanderRadius>
