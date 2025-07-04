@@ -3,7 +3,7 @@
 	<name>1trickPwnyta's Ideology Patch</name>
 	<author>1trickPwnyta</author>
 	<packageId>ideologypatch.1trickPwnyta</packageId>
-	<modVersion IgnoreIfNoMatchingField="True">1.10.2</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">1.10.3</modVersion>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
@@ -43,6 +43,7 @@ This mod makes a handful of small tweaks to the Ideology DLC that are intended t
 - Spikecore plates and floor slabs are now paintable.
 
 === Updates ===
+07/03/2025: Fixed bug that causes faction relations to reset on game reload
 06/14/2025: Categorized the settings UI
 06/13/2025: Update to 1.6
 12/12/2024: Fix the "Look change desired" mechanic with Biotech enabled and add negative apparel desire feature
