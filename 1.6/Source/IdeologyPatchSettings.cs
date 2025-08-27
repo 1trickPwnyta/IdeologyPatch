@@ -44,7 +44,10 @@ namespace IdeologyPatch
             listing.CheckboxLabeled("IdeologyPatch_FemaleNudity".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref FemaleNudity);
             listing.CheckboxLabeled("IdeologyPatch_PantsOnly".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref PantsOnly);
             listing.CheckboxLabeled("IdeologyPatch_DisableHumanFoodPlantThought".Translate(), ref DisableHumanFoodPlantThought);
-            listing.CheckboxLabeled("IdeologyPatch_BloodfeedingCorpsesDontCare".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref BloodfeedingCorpsesDontCare);
+            if (ModsConfig.BiotechActive)
+            {
+                listing.CheckboxLabeled("IdeologyPatch_BloodfeedingCorpsesDontCare".Translate() + " " + "IdeologyPatch_RestartRequired".Translate(), ref BloodfeedingCorpsesDontCare);
+            }
             listing.CheckboxLabeled("IdeologyPatch_FungusPreferredDisablesDarkThought".Translate(), ref FungusPreferredDisablesDarkThought);
             listing.CheckboxLabeled("IdeologyPatch_DarklightDefault".Translate(), ref DarklightDefault);
             listing.CheckboxLabeled("IdeologyPatch_ResearchMissingMemes".Translate(), ref ResearchMissingMemes);
