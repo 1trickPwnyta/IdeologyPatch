@@ -12,6 +12,12 @@ namespace IdeologyPatch.LookChangeDesiredFix
     {
         public static void Postfix(Pawn pawn, StyleItemDef styleItemDef, TattooType? tattooType, ref bool __result)
         {
+            // Compatibility patch for HAR
+            if (pawn.def.GetType().Name == "ThingDef_AlienRace")
+            {
+                return;
+            }
+
             if (IdeologyPatchSettings.LookChangeDesiredFix && pawn.genes != null && pawn.Ideo != null && !Find.IdeoManager.classicMode)
             {
                 List<StyleItemDef> geneAllowedItems, ideoAllowedItems;
