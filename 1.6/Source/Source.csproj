@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LookChangeDesiredFix\LookChangeDesiredUtility.cs" />
+    <Compile Include="LookChangeDesiredFix\Patch_Dialog_StylingStation.cs" />
     <Compile Include="SlavesArentQuestLodgers\Patch_QuestUtility.cs" />
     <Compile Include="DarklightDefault\Patch_Thing.cs" />
     <Compile Include="Debug.cs" />
